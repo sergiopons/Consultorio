@@ -15,27 +15,30 @@
     <button>Crear Cita</button>
     <section>
       <table>
-        <tr>
-          <th>CODER/TEAM</th>
-          <th>TOPIC</th>
-          <th>DATE</th>
-          <th>ACTION</th>
-        </tr> 
+        <thead>
+          <tr>
+            <th>CODER/TEAM</th>
+            <th>TOPIC</th>
+            <th>DATE</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
         foreach($requests as $request){
           echo "<tr>";
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
+            <td>$row['name']</td>
+            <td>$row['topic']</td>
+            <td>$row['date']</td>
+            <td>
+              <button>E</button>
+              <button>D</button>
+            </td>
+          echo "</tr>";
         }
+      </tbody>
      </table>
     </section>
   </main>
-  <?php 
-    
-    
-    ?>
 </body>
 
 </html>
