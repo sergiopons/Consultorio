@@ -1,3 +1,6 @@
+///////////////// INCLUDES ///////////
+<?php include('./controller/db/dbSession.php')?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,17 +27,19 @@
           </tr>
         </thead>
         <tbody>
-        foreach($requests as $request){
-          echo "<tr>";
-            <td>$row['name']</td>
-            <td>$row['topic']</td>
-            <td>$row['date']</td>
-            <td>
-              <button>E</button>
-              <button>D</button>
-            </td>
-          echo "</tr>";
-        }
+          <?php
+            foreach($requests as $request){
+              echo "<tr>";
+                <td>$row['name']</td>
+                <td>$row['topic']</td>
+                <td>$row['date']</td>
+                <td>
+                  <button>E</button>
+                  <button>D</button>
+                </td>
+              echo "</tr>";
+            }
+            ?>
       </tbody>
      </table>
     </section>
