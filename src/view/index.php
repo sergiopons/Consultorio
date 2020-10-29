@@ -28,17 +28,17 @@
         </thead>
         <tbody>
           <?php
-            foreach($requests as $request){
-              echo "<tr>";
-                <td>$row['name']</td>
-                <td>$row['topic']</td>
-                <td>$row['date']</td>
-                <td>
-                  <button>E</button>
-                  <button>D</button>
-                </td>
-              echo "</tr>";
-            }
+             foreach($requests as $request){
+              echo "<tr>
+                  <td>row</td>
+                  <td>row</td>
+                  <td>row</td>
+                  <td>
+                    <button>E</button>
+                    <button>D</button>
+                  </td>
+                </tr>";
+             }
             ?>
       </tbody>
      </table>
