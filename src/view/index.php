@@ -26,20 +26,8 @@
             <th>ACTION</th>
           </tr>
         </thead>
+        <?php include('./controller/db/requestList.php')?>
         <tbody>
-          <?php
-             foreach($requests as $request){
-              echo "<tr>
-                  <td>row</td>
-                  <td>row</td>
-                  <td>row</td>
-                  <td>
-                    <button>E</button>
-                    <button>D</button>
-                  </td>
-                </tr>";
-             }
-            ?>
       </tbody>
      </table>
     </section>
