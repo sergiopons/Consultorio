@@ -26,7 +26,7 @@
             <th>ACTION</th>
           </tr>
         </thead>
-        <?php include('./controller/db/requestList.php')?>
+        <?php include('src/controller/db/requestList.php')?>
         <tbody>
       </tbody>
      </table>
