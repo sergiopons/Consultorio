@@ -1,11 +1,5 @@
 <?php
 
-class MvcController {
-    public function template(){
+use App\Core\Views;
+use App\Model\Ticket;
 
-        
-        include "src/views/template.php";
-    }
-}
-
-?>

@@ -1,11 +1,11 @@
 <?php
 
-namespace app;
+namespace App;
 
 use PDO;
 use PDOException;
 
-class database
+class DbSession
 {
 
     public $mysql;
@@ -13,8 +13,7 @@ class database
     public function __construct()
     {
         try {
-            $this->mysql = $this->getConnection();
-           
+            $this->mysql = $this->getConnection();           
         } catch (PDOException $ex) {
             echo $ex->getMessage();
         }
@@ -22,7 +21,6 @@ class database
 
     private function getConnection()
     {
-
         $host = "localhost";
         $user = "root";
         $pass = "";

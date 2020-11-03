@@ -1,7 +1,9 @@
 <?php
 
-namespace app;
+namespace App;
 
-use App\controller\supportTicketController;
+use App\Model\Ticket;
 
-$controller = new supportTicketController();
+// $controller = new supportTicketController();
+// $newTicket = new Ticket();
+// $newTicket->save('jose', 'tomato', 'myTestDesc');
