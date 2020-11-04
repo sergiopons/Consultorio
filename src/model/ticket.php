@@ -67,4 +67,35 @@ class Ticket {
     {
         $this->database->mysql->query("INSERT INTO `{$this->table}` (`Coder/Team`, `Topic`, `Description`) VALUES ('{$coderTeam}', '{$topic}' , '{$description}');");
     }
+
+    public static function all()
+    {   
+        $database = new DbSession();
+        $query = $database->mysql->query("select * FROM agenda");
+        $ticketsArray = $query->fetchAll();
+        $ticketsList = [];
+        foreach ($ticketsArray as $ticket) {
+            $ticketItem = new self($ticket["Coder/Team"], $ticket["Topic"], $ticket["Date/Time"]);
+            array_push($ticketsArray, $ticketItem);
+        }
+
+        return $ticketsArray;
+    }
+
+    public function deleteById($id)
+    {
+        $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`id` = {$id}");
+    }
+
+    public static function findById($id): Ticket
+    {
+        $database = new DbSession();
+        $query = $database->mysql->query("SELECT * FROM `agenda` WHERE `id` = {$id}");
+        $result = $query->fetchAll();
+
+        
+        return new self($result[0]["Coder/Team"], $result[0]["Topic"], $result[0]["Date/Time"]);
+    }
 }
+
+  
