@@ -63,6 +63,7 @@ class Ticket {
     {
         $this->description = $description;
     }
+    
     public function save($coderTeam, $topic, $description): void
     {
         $this->database->mysql->query("INSERT INTO `{$this->table}` (`Coder/Team`, `Topic`, `Description`) VALUES ('{$coderTeam}', '{$topic}' , '{$description}');");
@@ -96,6 +97,9 @@ class Ticket {
         
         return new self($result[0]["Coder/Team"], $result[0]["Topic"], $result[0]["Date/Time"]);
     }
-}
 
-  
+    public function UpdateById($coderTeam, $topic, $description, $id)
+    {
+        $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` = '{$coderTeam}', `Topic` = '{$topic}', `Description` = '{$description}' WHERE `id` = {$id}");
+    }
+}

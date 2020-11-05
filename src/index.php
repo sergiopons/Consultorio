@@ -11,7 +11,8 @@ $newTicket = new Ticket();
 //     echo $ticket["Coder/Team"];
 // };
 // $newTicket->deleteById(6);
-$foo = $newTicket->findById(10);
+$foo = $newTicket->findById(1);
+$bar = $newTicket->UpdateById('Roro','Periodo', 'Ayudaaa', 1);
 echo $foo->getCoderTeam();
 // foreach($newTicket->findById(7) as $ticket){
 //     echo $ticket;
