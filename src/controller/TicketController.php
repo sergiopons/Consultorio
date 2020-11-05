@@ -40,11 +40,10 @@ class TicketController
     public function index(): void
     {
 
-        $ticket = new Ticket();
-        $tickets = $ticket->all();
+        $ticketList = Ticket::all();
 
         new View("ticketsList", [
-            "tickets" => $tickets,
+            "tickets" => $ticketList,
         ]);
     }
 
@@ -63,28 +62,27 @@ class TicketController
 
     public function delete($id)
     {
-        $ticketHelper = new Ticket();
-        $ticketHelper->deleteById($id);
+        $ticketToDelete = Ticket::findById($id);
+        $ticketToDelete->delete();
 
         $this->index();
     }
 
     public function edit($id)
     {
-        //Find Student By Id
-        $ticketHelper = new Ticket();
-        $ticket = $ticketHelper->findById($id);
-        //Execute view with student atributes
-        new View("editStudent", ["ticket" => $ticket]);
+     $tickeToedit = Ticket::findById($id);
+        new View("EditTicket", ["ticket" => $tickeToedit]);
     }
 
     public function update(array $request, $id)
     {
-        // Update Student By ID
-        $ticketHelper = new Ticket();
-        $ticket = $ticketHelper->findById($id);
-        $ticket->UpdateById($request["Coder/Team"], $request["Topic"], $request["Description"], $id);
-        // Return to Viwe List
+        $ticketToUpdate = Ticket::findById($id);
+        $ticketToUpdate->renameCoderTeam($request["coderTeam"]);
+        $ticketToUpdate->changeTopic($request["topic"]);
+        $ticketToUpdate->changeDescription($request["description"]);
+        $ticketToUpdate->update();
+
+
         $this->index();
     }
   }

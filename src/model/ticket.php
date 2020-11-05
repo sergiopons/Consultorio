@@ -88,6 +88,11 @@ class Ticket {
         $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`id` = {$id}");
     }
 
+    public function delete()
+    {
+      $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`id` = {$this->id}");
+    }
+
     public static function findById($id): Ticket
     {
         $database = new DbSession();
@@ -101,5 +106,10 @@ class Ticket {
     public function UpdateById($coderTeam, $topic, $description, $id)
     {
         $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` = '{$coderTeam}', `Topic` = '{$topic}', `Description` = '{$description}' WHERE `id` = {$id}");
+    }
+
+    public function Update()
+    {
+        $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` =  '{$this->coderTeam}', `Topic` = '{$this->topic}', `Description` = '{$this->description}' WHERE `id` = {$this->id}");
     }
 }
