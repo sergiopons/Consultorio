@@ -1,4 +1,5 @@
 <?php
+namespace App\Controller;
 
 use App\Core\View;
 use App\Model\Ticket;
