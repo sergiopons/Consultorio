@@ -71,6 +71,8 @@ class TicketController
     public function edit($id)
     {
      $tickeToedit = Ticket::findById($id);
+     echo $tickeToedit->getId(); 
+     echo $tickeToedit->getCoderTeam();
         new View("EditTicket", ["ticket" => $tickeToedit]);
     }
 

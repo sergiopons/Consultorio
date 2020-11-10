@@ -77,7 +77,7 @@ class Ticket {
         $ticketsArray = $query->fetchAll();
         $ticketsList = [];
         foreach ($ticketsArray as $ticket) {
-            $ticketItem = new self($ticket["Coder/Team"], $ticket["Topic"], $ticket["Date/Time"]);
+            $ticketItem = new self($ticket["Coder/Team"], $ticket["Topic"], $ticket["Date/Time"], $ticket["ID"]);
             array_push($ticketsList, $ticketItem);
         }
 
@@ -101,16 +101,16 @@ class Ticket {
         $result = $query->fetchAll();
 
         
-        return new self($result[0]["Coder/Team"], $result[0]["Topic"], $result[0]["Date/Time"]);
+        return new self($result[0]["Coder/Team"], $result[0]["Topic"], $result[0]["Description"], $result[0]["ID"]);
     }
 
     public function UpdateById($coderTeam, $topic, $description, $id)
     {
-        $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` = '{$coderTeam}', `Topic` = '{$topic}', `Description` = '{$description}' WHERE `id` = {$id}");
+        $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` = '{$coderTeam}', `Topic` = '{$topic}', `Description` = '{$description}' WHERE `ID` = {$id}");
     }
 
-    public function Update()
+    public function update()
     {
-        $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` =  '{$this->coderTeam}', `Topic` = '{$this->topic}', `Description` = '{$this->description}' WHERE `id` = {$this->id}");
+        $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` =  '{$this->coderTeam}', `Topic` = '{$this->topic}', `Description` = '{$this->description}' WHERE `ID` = {$this->id}");
     }
 }
