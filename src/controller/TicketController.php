@@ -30,7 +30,6 @@ class TicketController
         }
 
         if (isset($_GET) && ($_GET["action"] == "delete")) {
-
             $this->delete($_GET["id"]);
             return;
         }
@@ -56,7 +55,7 @@ class TicketController
     public function store(array $request): void
     {
         $newTicket = new Ticket();
-        $newTicket->save($request["Coder/Team"], $request["Topic"], $request["Description"]);
+        $newTicket->save($request["coderTeam"], $request["topic"], $request["description"]);
 
         $this->index();
     }

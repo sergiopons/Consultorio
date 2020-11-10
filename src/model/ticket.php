@@ -78,26 +78,26 @@ class Ticket {
         $ticketsList = [];
         foreach ($ticketsArray as $ticket) {
             $ticketItem = new self($ticket["Coder/Team"], $ticket["Topic"], $ticket["Date/Time"]);
-            array_push($ticketsArray, $ticketItem);
+            array_push($ticketsList, $ticketItem);
         }
 
-        return $ticketsArray;
+        return $ticketsList;
     }
 
-    public function deleteById($id)
-    {
-        $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`id` = {$id}");
-    }
+    // public function deleteById($id)
+    // {
+    //     $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`id` = {$id}");
+    // }
 
     public function delete()
     {
-      $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`id` = {$this->id}");
+      $query = $this->database->mysql->query("DELETE FROM `agenda` WHERE `agenda`.`ID` = {$this->id}");
     }
 
     public static function findById($id): Ticket
     {
         $database = new DbSession();
-        $query = $database->mysql->query("SELECT * FROM `agenda` WHERE `id` = {$id}");
+        $query = $database->mysql->query("SELECT * FROM `agenda` WHERE `ID` = {$id}");
         $result = $query->fetchAll();
 
         

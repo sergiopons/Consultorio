@@ -35,7 +35,6 @@
                     </tr>
                     ";
                 } ?>
-
             </tbody>
         </table>
     </main>

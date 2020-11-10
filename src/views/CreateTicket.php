@@ -8,9 +8,9 @@
         <h2 class="text-center">Nuevo Ticket</h2>
 
         <form action='?action=store' method="post">
-            <input type="text" name="Coder/Team" required>
-            <input type="text" name="Topic" required>
-            <input type="text" name="Description" required>
+            <input type="text" name="coderTeam" required>
+            <input type="text" name="topic" required>
+            <input type="text" name="description" required>
             <input type="submit" value="Crear">
             <input type="reset" value="Reset">
         </form>
