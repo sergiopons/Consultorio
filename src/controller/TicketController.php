@@ -82,7 +82,7 @@ class TicketController
         $ticketToUpdate->renameCoderTeam($request["coderTeam"]);
         $ticketToUpdate->changeTopic($request["topic"]);
         $ticketToUpdate->changeDescription($request["description"]);
-        $ticketToUpdate->update();
+        $ticketToUpdate->Update();
 
 
         $this->index();

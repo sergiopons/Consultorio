@@ -109,7 +109,7 @@ class Ticket {
         $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` = '{$coderTeam}', `Topic` = '{$topic}', `Description` = '{$description}' WHERE `ID` = {$id}");
     }
 
-    public function update()
+    public function Update()
     {
         $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` =  '{$this->coderTeam}', `Topic` = '{$this->topic}', `Description` = '{$this->description}' WHERE `ID` = {$this->id}");
     }
