@@ -13,7 +13,7 @@ class Ticket {
   private $database;
   private $table = "agenda";
 
-  public function __construct(string $coderTeam = null, string $topic = null, string $description = null, int $id = null, string $dateTime = null) {
+  public function __construct(string $coderTeam = null, string $topic = null,string $dateTime = null, string $description = null, int $id = null) {
     $this->id = $id;
     $this->coderTeam = $coderTeam;
     $this->topic = $topic;
