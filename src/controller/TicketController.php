@@ -38,9 +38,11 @@ class TicketController
             $this->delete($_GET["id"]);
             return;
         }
-
+        if (isset($_GET) && ($_GET["action"] == "check")) {
+            $this->check($_GET["id"]);
+            return;
+        }
        
-
         
     }
 
@@ -79,6 +81,14 @@ class TicketController
     {
      $tickeToedit = Ticket::findById($id);
      new View("EditTicket", ["ticket" => $tickeToedit]);
+    }
+    public function check($id)
+    {
+    $tickeDone = Ticket::findById($id);
+    $tickDone->check();
+
+    $this->index();
+     
     }
 
     public function update(array $request, $id)

@@ -113,4 +113,9 @@ class Ticket {
     {
         $this->database->mysql->query("UPDATE `agenda` SET `Coder/Team` =  '{$this->coderTeam}', `Topic` = '{$this->topic}', `Description` = '{$this->description}' WHERE `ID` = {$this->id}");
     }
+
+    public function check()
+    {
+      $this->database->mysql->query("UPDATE `agenda` SET `pendiente` = '1' WHERE `agenda`.`ID` = {$this->id}");
+    }
 }

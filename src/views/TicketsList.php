@@ -29,12 +29,14 @@
                         <td>{$ticket->getCoderTeam()}</td>
                         <td>{$ticket->getTopic()}</td>
                         <td>{$ticket->getDateTime()}</td>
-                        <td>                        
-                        <input type='checkbox'>                      
+                        <td>    
+                        <a href='?action=check&id={$ticket->getId()}'>
+                            <input type='checkbox'>                                           
+                        </a>                                            
                         </td>
                         <td>               
                         <a href='?action=edit&id={$ticket->getId()}'><i class='lnr lnr-pencil'></i></a>
-                            <a href='?action=delete&id={$ticket->getId()}'><i class='lnr lnr-trash'></i></a>
+                        <a href='?action=delete&id={$ticket->getId()}'><i class='lnr lnr-trash'></i></a>
                         </td>
                     </tr>
                     ";
