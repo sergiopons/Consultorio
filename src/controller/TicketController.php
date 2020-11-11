@@ -4,11 +4,16 @@ namespace App\Controller;
 use App\Core\View;
 use App\Model\Ticket;
 
+
 class TicketController
 {
 
     public function __construct()
     {
+         if(isset($_GET) && (!$_GET["action"])){
+            $this->index();
+            return;
+        } 
         if (isset($_GET) && ($_GET["action"] == "create")) {
             $this->create();
             return;
@@ -34,7 +39,9 @@ class TicketController
             return;
         }
 
-        $this->index();
+       
+
+        
     }
 
     public function index(): void
