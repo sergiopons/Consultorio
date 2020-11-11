@@ -1,21 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 28, 2020 at 12:54 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Host: localhost:8889
+-- Generation Time: Nov 11, 2020 at 10:31 AM
+-- Server version: 5.7.26
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `citas`
@@ -31,9 +24,19 @@ CREATE TABLE `agenda` (
   `ID` int(11) NOT NULL,
   `Coder/Team` varchar(15) NOT NULL,
   `Topic` varchar(15) NOT NULL,
-  `Date/Time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `Description` text NOT NULL
+  `Date/Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `Description` text NOT NULL,
+  `pendiente` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `agenda`
+--
+
+INSERT INTO `agenda` (`ID`, `Coder/Team`, `Topic`, `Date/Time`, `Description`, `pendiente`) VALUES
+(3, 'atom', 'php', '2020-11-10 11:25:43', 'help', NULL),
+(6, 'paula', 'aka', '2020-11-10 12:10:43', 'nuevo', NULL),
+(7, 'test nuevo', 'nuevo', '2020-11-10 13:14:04', 'funciona', NULL);
 
 --
 -- Indexes for dumped tables
@@ -53,9 +56,4 @@ ALTER TABLE `agenda`
 -- AUTO_INCREMENT for table `agenda`
 --
 ALTER TABLE `agenda`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
