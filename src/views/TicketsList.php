@@ -16,6 +16,7 @@
                     <th>Coder/Team</th>
                     <th>Topic</th>
                     <th>Data/Time</th>
+                    <th>Done</th>
                     <th>Options</th>
                 </tr>
             </thead>
@@ -28,6 +29,9 @@
                         <td>{$ticket->getCoderTeam()}</td>
                         <td>{$ticket->getTopic()}</td>
                         <td>{$ticket->getDateTime()}</td>
+                        <td>                        
+                        <input type='checkbox'>                      
+                        </td>
                         <td>               
                         <a href='?action=edit&id={$ticket->getId()}'><i class='lnr lnr-pencil'></i></a>
                             <a href='?action=delete&id={$ticket->getId()}'><i class='lnr lnr-trash'></i></a>
