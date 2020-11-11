@@ -10,7 +10,7 @@ class TicketController
 
     public function __construct()
     {
-         if(isset($_GET) && (!$_GET["action"])){
+         if(isset($_GET) && !isset($_GET["action"])){
             $this->index();
             return;
         } 

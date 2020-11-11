@@ -101,7 +101,7 @@ class Ticket {
         $result = $query->fetchAll();
 
         
-        return new self($result[0]["Coder/Team"], $result[0]["Topic"], $result[0]["Description"], $result[0]["ID"]);
+        return new self($result[0]["Coder/Team"], $result[0]["Topic"], $result[0]["Date/Time"], $result[0]["ID"],$result[0]["Description"]);
     }
 
     public function UpdateById($coderTeam, $topic, $description, $id)
