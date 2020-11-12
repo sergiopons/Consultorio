@@ -70,7 +70,7 @@ class TicketController
   {
     $newTicket = new Ticket();
     $newTicket->save($request["coderTeam"], $request["topic"], $request["description"]);
-    $log = new Log("Create","Created a new student");
+    $log = new Log("Create", "Created a new ticket");
     $log->LogInFile();
 
     $this->index();
@@ -80,6 +80,8 @@ class TicketController
   {
     $ticketToDelete = Ticket::findById($id);
     $ticketToDelete->delete();
+    $log = new Log("Delete", "Delete a ticket", $id);
+    $log->LogInFile();
 
     $this->index();
   }
@@ -100,6 +102,9 @@ class TicketController
   {
     $ticketDone = Ticket::findById($id);
     $ticketDone -> archiveDb();
+    $log = new Log("Archive", "Ticket archived", $id);
+    $log->LogInFile();
+
     $ticketDoneList = Ticket::allDone();
     new View("doneTicketList", ["ticket" => $ticketDoneList]);
   }
@@ -111,6 +116,9 @@ class TicketController
     $ticketToUpdate->changeTopic($request["topic"]);
     $ticketToUpdate->changeDescription($request["description"]);
     $ticketToUpdate->Update();
+
+    $log = new Log("Update", "Ticket updated", $id);
+    $log->LogInFile();
 
     $this->index();
   }
