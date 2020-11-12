@@ -79,15 +79,14 @@ class TicketController
 
     public function edit($id)
     {
-     $tickeToedit = Ticket::findById($id);
-     new View("EditTicket", ["ticket" => $tickeToedit]);
+     $ticketToedit = Ticket::findById($id);
+     new View("EditTicket", ["ticket" => $ticketToedit]);
     }
+
     public function check($id)
     {
-    $tickeDone = Ticket::findById($id);
-    $tickDone->check();
-
-    $this->index();
+    $ticketDone = Ticket::findById($id);
+    new View("DoneTicket", ["ticket" => $ticketDone]);
      
     }
 
