@@ -5,11 +5,11 @@
   <?php require_once("Modules/Header.php") ?>
   <main class="container">
     <a href="?action=create">
-      <button class="btn btn-primary btn-circle btn-lg">
+      <button class="btn-info ">
         <i class="fas fa-plus"></i>
       </button>
     </a>
-    <table class="table table-light">
+    <table class="table ">
 
       <thead class="thead-light">
         <tr>
