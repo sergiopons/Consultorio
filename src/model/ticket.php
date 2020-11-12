@@ -75,7 +75,7 @@ class Ticket
   public static function all()
   {
     $database = new DbSession();
-    $query = $database->mysql->query("select * FROM agenda");
+    $query = $database->mysql->query("SELECT * FROM `agenda` WHERE `pendiente` = FALSE");
     $ticketsArray = $query->fetchAll();
     $ticketsList = [];
     foreach ($ticketsArray as $ticket) {

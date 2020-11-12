@@ -24,18 +24,16 @@
         <?php
         foreach ($data["tickets"] as $ticket) {
           echo "
-                    <tr>
-                        <td>{$ticket->getCoderTeam()}</td>
-                        <td>{$ticket->getTopic()}</td>
-                        <td>{$ticket->getDateTime()}</td>
-                        <td>                                           
-                        </td>
-                        <td>               
-                        <a href='?action=edit&id={$ticket->getId()}'><i class='lnr lnr-pencil'></i></a>
-                        <a href='?action=delete&id={$ticket->getId()}'><i class='lnr lnr-trash'></i></a>
-                        <a href='?action=check&id={$ticket->getId()}'><i class='lnr lnr-paperclip'></i></a>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>{$ticket->getCoderTeam()}</td>
+                    <td>{$ticket->getTopic()}</td>
+                    <td>{$ticket->getDateTime()}</td>
+                    <td>               
+                    <a href='?action=edit&id={$ticket->getId()}'><i class='lnr lnr-pencil'></i></a>
+                    <a href='?action=delete&id={$ticket->getId()}'><i class='lnr lnr-trash'></i></a>
+                    <a href='?action=check&id={$ticket->getId()}'><i class='lnr lnr-paperclip'></i></a>
+                    </td>
+                </tr>
                     ";
         } ?>
       </tbody>

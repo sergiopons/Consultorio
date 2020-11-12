@@ -20,14 +20,14 @@
 
       <tbody>
         <?php
-        foreach ($data["tickets"] as $ticket) {
+        foreach ($data["ticket"] as $ticket) {
           echo "
-                    <tr>
-                        <td>{$ticket->getCoderTeam()}</td>
-                        <td>{$ticket->getTopic()}</td>
-                        <td>{$ticket->getDateTime()}</td>    
-                    </tr>
-                    ";
+            <tr>
+                <td>{$ticket->getCoderTeam()}</td>
+                <td>{$ticket->getTopic()}</td>
+                <td>{$ticket->getDateTime()}</td>
+            </tr>
+            ";
         } ?>
       </tbody>
     </table>

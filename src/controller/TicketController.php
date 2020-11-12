@@ -98,7 +98,7 @@ class TicketController
     $ticketDone = Ticket::findById($id);
     $ticketDone -> archiveDb();
     $ticketDoneList = Ticket::allDone();
-    new View("ticketDoneList", ["ticket" => $ticketDoneList]);
+    new View("doneTicketList", ["ticket" => $ticketDoneList]);
   }
 
   public function update(array $request, $id)

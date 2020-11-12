@@ -11,8 +11,8 @@
       <input type="text" name="topic" required value='<?php echo $data["ticket"]->getTopic() ?>'>
       <input type="text" name="description" required value='<?php echo $data["ticket"]->getDescription() ?>'>
       <div class="btn-group buttonGroup" role="group" aria-label="Basic example">
-        <button type="submit" value="Done">Yes</button>
-        <button value="Cancel"><a href="index.php">No</a></button>
+        <button type="submit">Yes</button>
+        <button><a href="index.php">No</a></button>
       </div>
     </form>
   </main>
