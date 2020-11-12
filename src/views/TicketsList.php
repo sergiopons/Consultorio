@@ -2,28 +2,28 @@
 
 <body>
 
-    <?php require_once("Modules/Header.php") ?>
-    <main class="container">
-        <a href="?action=create">
-            <button class="btn btn-primary btn-circle btn-lg">
-                <i class="fas fa-plus"></i>
-            </button>
-        </a>
-        <table class="table table-light">
+  <?php require_once("Modules/Header.php") ?>
+  <main class="container">
+    <a href="?action=create">
+      <button class="btn btn-primary btn-circle btn-lg">
+        <i class="fas fa-plus"></i>
+      </button>
+    </a>
+    <table class="table table-light">
 
-            <thead class="thead-light">
-                <tr>                    
-                    <th>Coder/Team</th>
-                    <th>Topic</th>
-                    <th>Data/Time</th>
-                    <th>Options</th>
-                </tr>
-            </thead>
+      <thead class="thead-light">
+        <tr>
+          <th>Coder/Team</th>
+          <th>Topic</th>
+          <th>Data/Time</th>
+          <th>Options</th>
+        </tr>
+      </thead>
 
-            <tbody>
-                <?php
-                foreach ($data["tickets"] as $ticket) {
-                    echo "
+      <tbody>
+        <?php
+        foreach ($data["tickets"] as $ticket) {
+          echo "
                     <tr>
                         <td>{$ticket->getCoderTeam()}</td>
                         <td>{$ticket->getTopic()}</td>
@@ -37,10 +37,10 @@
                         </td>
                     </tr>
                     ";
-                } ?>
-            </tbody>
-        </table>
-    </main>
+        } ?>
+      </tbody>
+    </table>
+  </main>
 </body>
 
 </html>
