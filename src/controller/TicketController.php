@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Core\View;
 use App\Model\Ticket;
+use App\Logger\Log;
 
 
 class TicketController
@@ -69,6 +70,8 @@ class TicketController
   {
     $newTicket = new Ticket();
     $newTicket->save($request["coderTeam"], $request["topic"], $request["description"]);
+    $log = new Log("Create","Created a new student");
+    $log->LogInFile();
 
     $this->index();
   }
