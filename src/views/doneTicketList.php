@@ -8,7 +8,7 @@
       </a>
   </header>
   <main class="u-flex u-flex-column">
-    <table class="table striped mx-2 mt-10"; style="width: 100%;">
+    <table class="table striped mx-2 mt-10">
       <thead class="bg-purple-200">
         <tr>
         <tr>

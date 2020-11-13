@@ -8,25 +8,25 @@
     </a>
   </header>
   <main class="u-flex u-flex-column u-center mt-12">
-    <form action='?action=update&id=<?php echo $data["ticket"]->getId() ?>' method="post" class="u-flex u-flex-column u-center"; style="width: 100%;">
-      <div class="u-center">
-        <label class="mt-1" ; style="width: 30rem;">
+    <form action='?action=update&id=<?php echo $data["ticket"]->getId() ?>' method="post" class="u-flex u-flex-column"; style="width: 100%;">
+      <div class="u-flex u-center">
+        <label ; style="width: 30rem;">
           <i class="fas fa-question"></i> Name of the coder and/or the team
           <input type="text" name="coderTeam" value='<?php echo $data["ticket"]->getCoderTeam() ?>' required></label>
-        <label class="mt-1" ; style="width: 30rem;">
+        <label ; style="width: 30rem;">
           <i class="fas fa-question"></i> What's the topic of the ticket?
           <input type="text" name="topic" value='<?php echo $data["ticket"]->getTopic() ?>' required>
       </label>
       </div>
       <div class="u-flex u-center">
-        <label class="mt-2" ; style="width: 61rem;">
+        <label class="mt-2 u-center" ; style="width: 61rem;">
           <i class="fas fa-question"></i> What's the description of the problem?
           <textarea name="description" value='<?php echo $data["ticket"]->getDescription() ?>' required></textarea>
       </label>
       </div>
-      <div class="btn-group u-center u-flex"; style="width: 61rem;">
-        <input type="reset" value="Reset" class="btn outline btn-warning"; style="width: 50%;">
-        <input type="submit" value="Update" class="btn btn-success"; style="width: 50%;">
+      <div class="btn-group u-flex-row u-center"; style="width: 61rem;">
+        <input type="reset" value="Reset" class="btn outline btn-warning u-center">
+        <input type="submit" value="Update" class="btn btn-success u-center">
       </div>
     </form>
   </main>

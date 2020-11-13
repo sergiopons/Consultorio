@@ -2,7 +2,7 @@
 <body>
   <?php require_once("Modules/Header.php") ?>
   <main class="u-flex u-flex-column mt-10">
-    <table class="table striped mx-2"; style="width: 100%;">
+    <table class="table striped mx-2">
       <thead class="bg-purple-200">
         <tr>
           <th><abbr title="Name of the coder or the team">Coder/Team</abbr></th>
