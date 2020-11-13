@@ -58,3 +58,333 @@
     "Message": "Ticket archived",
     "id": 15
 }
+{
+    "Time": "2020-11-12 14:11:46",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 14:12:40",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 14:24:53",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 14:25:05",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 14:26:41",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 15:19:36",
+    "Action": "Delete",
+    "Message": "Delete a ticket",
+    "id": 21
+}
+{
+    "Time": "2020-11-12 15:28:46",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 20:36:18",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-12 20:36:48",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 22
+}
+{
+    "Time": "2020-11-13 00:23:49",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-13 00:24:14",
+    "Action": "Delete",
+    "Message": "Delete a ticket",
+    "id": 23
+}
+{
+    "Time": "2020-11-13 08:56:40",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 08:57:29",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 08:57:58",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:00:23",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:02:18",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:07:50",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:08:02",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:08:35",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:08:50",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:21:17",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:22:13",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:22:30",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 24
+}
+{
+    "Time": "2020-11-13 09:37:18",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:37:45",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:38:31",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:38:50",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:39:39",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:40:03",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:40:30",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:40:42",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:40:58",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:41:10",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 25
+}
+{
+    "Time": "2020-11-13 09:42:17",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:43:04",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:43:32",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:43:59",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:44:55",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:45:19",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:45:31",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:45:40",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:46:03",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:46:39",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:46:59",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 26
+}
+{
+    "Time": "2020-11-13 09:47:17",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 27
+}
+{
+    "Time": "2020-11-13 09:52:37",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-13 09:52:56",
+    "Action": "Delete",
+    "Message": "Delete a ticket",
+    "id": 31
+}
+{
+    "Time": "2020-11-13 09:53:48",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 30
+}
+{
+    "Time": "2020-11-13 09:55:17",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-13 09:55:33",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 28
+}
+{
+    "Time": "2020-11-13 09:55:54",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
+{
+    "Time": "2020-11-13 10:21:01",
+    "Action": "Update",
+    "Message": "Ticket updated",
+    "id": 29
+}
+{
+    "Time": "2020-11-13 10:21:16",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 29
+}
+{
+    "Time": "2020-11-13 10:21:50",
+    "Action": "Archive",
+    "Message": "Ticket archived",
+    "id": 32
+}
+{
+    "Time": "2020-11-13 10:57:37",
+    "Action": "Create",
+    "Message": "Created a new ticket",
+    "id": null
+}
