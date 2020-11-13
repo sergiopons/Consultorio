@@ -130,6 +130,7 @@ class ApiTicketController
     $log->LogInFile();
 
     $ticketDoneList = Ticket::allDone();
+    $ticketApi = [];
     foreach ($ticketDoneList as $ticket) {
       $ticketArray =
       [
